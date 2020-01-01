@@ -6,6 +6,6 @@ function displayThings(){
 		allText.innertext = files;
 	}
 	catch(error){
-		alert(error);
+		allText.innertext = error;
 	}
 }
