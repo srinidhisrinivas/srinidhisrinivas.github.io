@@ -1,11 +1,6 @@
 var fs = require('fs');
-var files = fs.readdirSync('C:/Users/Srinidhi/Documents/writing/*.txt')
+var files = fs.readdirSync('writing/*.txt');
 function displayThings(){
 	var allText = document.getElementById('allText');
-	try{
-		allText.innertext = files;
-	}
-	catch(error){
-		allText.innertext = error;
-	}
+	allText.innertext = 'reach';
 }
