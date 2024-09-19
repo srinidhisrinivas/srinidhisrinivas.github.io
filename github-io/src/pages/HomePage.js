@@ -1,23 +1,39 @@
 import logo from '../graphics/logo.svg';
+import profile from '../graphics/Profile-Full.jpg'
+import { PageNav } from '../components/Components.js'
+import React from 'react'
 import '../App.css';
+
+class TestComponent extends React.Component {
+    render() {
+        return (
+            <p>
+               Text {this.props.text}
+            </p>
+        )
+    }
+}
 
 function Home() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={profile} className="App-logo" alt="logo" />
         <p>
-          This is the home page. Here is the link to page two: <a href="/pagetwo">Page Two</a>
+          Hello! I am Srinidhi Srinivas.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
+        <div>
+      This div appears
+      <TestComponent text="hehe" />
+      
+      	<PageNav 
+      	    links={[{name:"Home",link:"home"},{name:"Projects",link:"projects"}]}
+      	/>
+      	 
+      </div>
       </header>
+      
     </div>
   );
 }

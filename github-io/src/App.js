@@ -1,8 +1,8 @@
 import logo from './graphics/logo.svg';
 import './App.css';
 import { Route, Routes, Navigate } from 'react-router-dom'
-import HomePage from './pages/HomePage.js';
-import PageTwo from './pages/PageTwo.js';
+import Home from './pages/HomePage.js';
+import Projects from './pages/Projects.js';
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
     	 element={<Navigate to="/home" replace/>}
     	 />
   
-    	 <Route path="/home" element=<HomePage /> />
-    	 <Route path="/pagetwo" element=<PageTwo /> />
+    	 <Route path="/home" element=<Home /> />
+    	 <Route path="/projects" element=<Projects /> />
     </Routes>
   );
 }
