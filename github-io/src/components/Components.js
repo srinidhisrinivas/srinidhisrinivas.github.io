@@ -1,14 +1,18 @@
 import React from 'react'
-
+import tree from '../graphics/tree.ico'
 
 export class PageLink extends React.Component {
     
     render(){
     	let linkString = "#/"+this.props.link
     	return(
+    	    
     	    <a href={linkString} className="page-link">
+    	    <div className="page-link-button" onclick="location.href='{linkString}'">
     	    {this.props.name}
+    	    </div>
     	    </a>
+    	    
     	)
     }
 
@@ -27,10 +31,7 @@ export class PageNav extends React.Component {
     	return navComponents;
     }
     render() {
-    	console.log("we out here");
-    	console.log(this.props.links);
     	let navList = this.buildNavList(this.props.links);
-    	console.log(navList)
         return(
     	    <div className="page-nav">
     		{navList}
@@ -38,4 +39,27 @@ export class PageNav extends React.Component {
     	)
     }
 	
+}
+
+export class Header extends React.Component {
+    render(){
+    	return(
+	      <div className="site-header">
+	      <div className="header-text-box">
+	      
+	      <div className="header-photo-box">
+	      <img src={tree} alt="tree-logo" className="header-photo"/>
+	      </div>
+	      <div className="header-text">
+	      Srinidhi's Garden
+	      </div>
+	      </div>
+	      <PageNav 
+	      	    links={[{name:"Home",link:"home"},
+	      	    {name:"Plants",link:"projects"}
+	      	    ]}
+	      	/>
+	      </div>
+    	)
+    }
 }

@@ -1,23 +1,21 @@
 import meme from '../graphics/meme.jpg';
-import { PageNav } from '../components/Components.js'
+import { Header } from '../components/Components.js'
 import '../App.css';
 
 function Projects() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Header />
+      <div className="site-content">
         <img src={meme} className="meme" alt="logo" />
+        <p>
+          Hello! My projects will be visible here.
+        </p>
         
-        
-        <div style={{"padding-top":10+'px'}}>
-      
-      	<PageNav 
-      	    links={[{name:"Home",link:"home"},{name:"Projects",link:"projects"}]}
-      	/>
-      	 
+        <div>
+      This div appears   	 
       </div>
-      </header>
-      
+      </div>      
     </div>
   );
 }
