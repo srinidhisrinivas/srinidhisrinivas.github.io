@@ -9,9 +9,10 @@
   display: block;
 }
 
-.App-logo {
+.profile-photo {
   height: 40vmin;
   pointer-events: none;
+  margin-bottom: 50px;
 }
 
 .meme {
@@ -20,11 +21,11 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 1s linear;
+  .profile-photo {
+    animation: App-logo-spin infinite 10s linear;
   }
   .meme {
-    animation: App-logo-spin infinite 1s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
@@ -54,6 +55,8 @@
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
+  background-image: url('graphics/HeaderBG.jpg');
+  background-size: cover;
 
 }
 .header-text-box {
@@ -68,8 +71,9 @@
   font-family:    Arial, Helvetica, sans-serif;
   font-size:      30px;
   font-weight:    bold;
-  color: #006400;
+  color: orange;
   text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+  background-color: #F9F7F5;
 }
 .header-photo-box {
 
@@ -82,14 +86,6 @@
   object-fit: contain;
 }
 
-.site-content {
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #000038;
-  padding-top: 10%;
-}
 
 .page-nav {
   height: 130px;
@@ -112,6 +108,7 @@
   font-weight: bold;
   color: black;  
   text-decoration: none;
+  padding: 4px;
 }
 .page-link:visited {
   color: black;
@@ -126,16 +123,49 @@
   
 }
 .page-link-button:hover {
-  background: #90ee90;
+  background: orange;
 }
 
-.App-link {
-  color: #61dafb;
+.site-content {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #000038;
+  padding-top: 0%;
+  background-image: url('graphics/BGPlants.jpg');
+  background-size: 100% auto;
+}
+.home-photo-container {
+  background: transparent;
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.links{
+  background: transparent;
+  font-size: 20px;
+  text-align: center;
 }
 
-.page-link {
-  padding: 4px
+.home-text-container {
+  background: transparent;
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
 }
+.home-text {
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 60px;
+}
+
 
 @keyframes App-logo-spin {
   from {

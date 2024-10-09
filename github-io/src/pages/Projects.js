@@ -11,10 +11,6 @@ function Projects() {
         <p>
           Hello! My projects will be visible here.
         </p>
-        
-        <div>
-      This div appears   	 
-      </div>
       </div>      
     </div>
   );
