@@ -73,14 +73,14 @@
   font-weight:    bold;
   color: orange;
   text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
-  background-color: #F9F7F5;
+  background-color: transparent;
 }
 .header-photo-box {
 
   height: 100%;
   margin: 0px 30px 0px 0px;
 }
-.header-photo: {
+.header-photo{
   height: 100%;
   width: 100%;
   object-fit: contain;
