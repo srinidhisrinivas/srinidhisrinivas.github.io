@@ -23,7 +23,6 @@ export class PageNav extends React.Component {
     buildNavList(navList){
     	let navComponents = [];
     	for(let i=0; i<navList.length; i++){
-    	    console.log("buildNavList " + i);
     	    navComponents.push(
     	    	<PageLink name={navList[i].name} link={navList[i].link} key={i}/>
     	    );
@@ -56,10 +55,56 @@ export class Header extends React.Component {
 	      </div>
 	      <PageNav 
 	      	    links={[{name:"Home",link:"home"},
-	      	    {name:"Plants",link:"projects"}
+	      	    {name:"Gardener",link:"about"},
+	      	    {name:"Plants",link:"projects"},
+	     	    {name:"History",link:"resume"}
 	      	    ]}
 	      	/>
 	      </div>
     	)
     }
 }
+
+
+class LinksRow extends React.Component {
+    render(){
+         return(
+            <tr> 
+            <td className="link-name">
+            	{this.props.name}
+            </td>
+            <td>
+            	<a className="link-url" href={this.props.url} target="_blank">{this.props.linkText}</a>
+            </td>
+            </tr> 
+         )
+    }
+}
+
+export class LinksTable extends React.Component {
+    
+    buildLinkList(linkList){
+    	let linkComponents = [];
+    	for(let i=0; i<linkList.length; i++){
+    	    linkComponents.push(
+    	    	<LinksRow 
+    	    	  name={linkList[i].name} 
+    	    	  url={linkList[i].url} 
+    	    	  linkText={linkList[i].linkText}
+    	    	  key={i}
+    	  	/>
+    	    );
+    	}
+    	return linkComponents;
+    }
+    render() {
+    	let linkList = this.buildLinkList(this.props.links);
+        return(
+    	    <table className="links-table">
+    		{linkList}
+    	    </table>
+    	)
+    }
+	
+} 
+
