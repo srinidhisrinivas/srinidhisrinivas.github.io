@@ -126,7 +126,7 @@
 }
 
 .site-content {
-  min-height: 100%;
+  min-height: 110%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -134,7 +134,7 @@
   font-size: calc(10px + 2vmin);
   color: #000038;
   margin-top: 100px;
-  background-image: url('graphics/BGVines.png');
+  background-image: url('graphics/HomeBG.png');
   background-size: 100% auto;
   background-repeat: repeat;
   position: relative;
@@ -144,7 +144,7 @@
   width: 100%;
   bottom: 0px;
   z-index: 0;
-  visibility: hidden;
+  visibility: hidden
 }
 .bottom-image{
   width: 100%;
@@ -184,14 +184,15 @@
 }
 
 .proj-page-container {
-  padding-top: 30px;
+
   background: transparent;
   padding-bottom: 50px;
-  height: 100%;
   width: 70%; 
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
+  top: 30px;
 }
 .projects-table{
   table-layout: fixed;
@@ -203,14 +204,31 @@
   height: 85px;
   z-index: 90;
   position: absolute;
-  background: grey;
   margin-top: 15px;
   left: 80px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.project-link.odd {
+  background: green;
+}
+.project-link.even {
+  background: #74b705;
+}
+.project-link:hover{
+  background: orange;
+}
+
 .project-cell-container{
   position: relative;
   background: transparent;
   align-content: center;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 } 
 .project-cell{
   background: transparent;

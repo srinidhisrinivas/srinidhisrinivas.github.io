@@ -41,11 +41,11 @@ function Home() {
           
         </p>
         </div>
-        <div className="bottom-image-container">
-        <img src={bottomplants} className="bottom-image" />
-        </div>
+        
       </div>
-      
+      <div className="bottom-image-container">
+	<img src={bottomplants} className="bottom-image" />
+	</div>
     </div>
   );
 }

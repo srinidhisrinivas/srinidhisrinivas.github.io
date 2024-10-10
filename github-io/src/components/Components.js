@@ -114,8 +114,12 @@ export class LinksTable extends React.Component {
 export class ProjectFlower extends React.Component {
     render(){
     	// div with project overview information and clickability
+    	
+    	let projectName = this.props.project;
+    	let hashValue = projectName.charCodeAt(0);
+    	let color = hashValue % 2 == 0;
     	return (
-    		<div className="project-link">
+    		<div className={"project-link" + " " + (color ? "odd" : "even")}>
     		{this.props.project}
     		</div>
     	);
@@ -128,7 +132,7 @@ export class ProjectPlant extends React.Component {
         return (
         	<td className="project-cell">
         	<div className="project-cell-container">
-        	<ProjectFlower project={this.props.project} />
+        	<ProjectFlower project={this.props.project}/>
         	<img src={plant} className="plant-image"/>
         	</div>
         	</td>
