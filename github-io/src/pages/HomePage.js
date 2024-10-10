@@ -1,4 +1,5 @@
 import profile from '../graphics/Profile-Full.jpg'
+import bottomplants from '../graphics/bottom-plants.png'
 import { Header, LinksTable } from '../components/Components.js'
 import React from 'react'
 import '../App.css';
@@ -39,6 +40,9 @@ function Home() {
           Feel free to take a look around, smell the flowers, and take in the sights.
           
         </p>
+        </div>
+        <div className="bottom-image-container">
+        <img src={bottomplants} className="bottom-image" />
         </div>
       </div>
       

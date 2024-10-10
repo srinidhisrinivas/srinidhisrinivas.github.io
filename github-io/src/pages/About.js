@@ -1,4 +1,5 @@
 import meme from '../graphics/meme.jpg';
+import bottomplants from '../graphics/bottom-plants.png'
 import { Header } from '../components/Components.js'
 import '../App.css';
 
@@ -11,6 +12,9 @@ function About() {
         <p>
           Hello! My about me section will be visible here.
         </p>
+        <div className="bottom-image-container">
+        <img src={bottomplants} className="bottom-image" />
+        </div>
       </div>      
     </div>
   );
