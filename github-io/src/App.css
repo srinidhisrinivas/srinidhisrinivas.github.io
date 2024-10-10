@@ -183,9 +183,14 @@
   color: orange;
 }
 
-.proj-page-container {
-
+.page-header{
   background: transparent;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+.proj-page-container {
+  background: transparent;
+  padding-top: 10px;
   padding-bottom: 50px;
   width: 70%; 
   display: flex;
@@ -206,7 +211,7 @@
   position: absolute;
   margin-top: 15px;
   left: 80px;
-  border-radius: 10px;
+  border-radius: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -239,6 +244,53 @@
   width: 200px;
 }
 
+
+.singleproj-container {
+  background: transparent;
+  padding-bottom: 50px;
+  width: 90%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  min-height: 90%;
+}
+.singleproj-info-container{
+  display: flex;
+  flex-direction: row;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+}
+.proj-images-container{
+  background: transparent;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.proj-text-container{
+  background: red;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-image {
+  max-height: 500px;
+}
+.image-scroller-button{
+  background: white;
+  border: 4px solid #006400;
+  padding: 10px 38px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.image-scroller-button:hover{
+  background: orange;
+}
 
 .home-text-container {
   background: transparent;

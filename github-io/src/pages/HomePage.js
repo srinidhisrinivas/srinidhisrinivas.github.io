@@ -1,6 +1,7 @@
 import profile from '../graphics/Profile-Full.jpg'
 import bottomplants from '../graphics/bottom-plants.png'
-import { Header, LinksTable } from '../components/Components.js'
+import { LinksTable } from '../components/HomePageComps.js'
+import { Header } from '../components/HeaderComps.js'
 import React from 'react'
 import '../App.css';
 

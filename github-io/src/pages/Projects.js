@@ -1,5 +1,5 @@
-import meme from '../graphics/meme.jpg';
-import { Header } from '../components/Components.js'
+import { Header } from '../components/HeaderComps.js'
+import { ProjectsTable } from '../components/ProjectComps.js'
 import '../App.css';
 
 function Projects() {
@@ -7,10 +7,16 @@ function Projects() {
     <div className="App">
       <Header />
       <div className="site-content">
-        <img src={meme} className="meme" alt="logo" />
-        <p>
-          Hello! My projects will be visible here.
-        </p>
+      <div className="proj-page-container">
+      <h1 className="page-header"> Plants </h1>
+      <p className="page-summary"> Here are some of my projects, erm..., plants that I've grown and taken care of over the years. Click on each for more information! </p>
+      
+        <ProjectsTable
+            projectList={[
+                "a","b","c","d"
+            ]}
+        /> 
+      </div>
       </div>      
     </div>
   );

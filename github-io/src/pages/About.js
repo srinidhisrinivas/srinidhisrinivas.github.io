@@ -1,6 +1,6 @@
 import meme from '../graphics/meme.jpg';
 import bottomplants from '../graphics/bottom-plants.png'
-import { Header } from '../components/Components.js'
+import { Header } from '../components/HeaderComps.js'
 import '../App.css';
 
 function About() {

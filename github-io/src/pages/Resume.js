@@ -1,5 +1,5 @@
 import meme from '../graphics/meme.jpg';
-import { Header } from '../components/Components.js'
+import { Header } from '../components/HeaderComps.js'
 import '../App.css';
 
 function Resume() {
