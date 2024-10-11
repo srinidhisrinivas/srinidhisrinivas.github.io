@@ -7,7 +7,7 @@ function Projects() {
   // Filter the relevant information for the projects display page
   let projectListFiltered = projectList.map((proj) => {
      return {
-  	"shortName": proj.shortName,
+  	"short_name": proj.short_name,
   	"route": proj.route
   	}
   });

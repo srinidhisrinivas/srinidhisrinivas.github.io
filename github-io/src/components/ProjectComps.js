@@ -8,10 +8,8 @@ const PROJECT_TABLE_COLUMNS=3;
 function ProjectFlower(props) {
 
 	// div with project overview information and clickability
-	// TODO: OnClick link to the appropriate project page
 	
-	
-	let projectName = props.project.shortName;
+	let projectName = props.project.short_name;
 	let projectRoute = props.project.route;
 	let hashValue = projectName.charCodeAt(0);
 	let color = hashValue % 2 == 0;
@@ -35,7 +33,7 @@ export class ProjectPlant extends React.Component {
     render(){
         // Return an empty plant if the project is empty
         // TODO: Figure out a better way to do this
-        if(!this.props.project.shortName){
+        if(!this.props.project.short_name){
            return (
            	<td className="project-cell">
         	<div className="project-cell-container">

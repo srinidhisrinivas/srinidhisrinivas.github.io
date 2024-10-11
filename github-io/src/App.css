@@ -313,6 +313,7 @@
 }
 .image-scroller-button:hover{
   background: orange;
+  cursor: pointer;
 }
 .image-scroller-button.left{
   margin-right: 5px;

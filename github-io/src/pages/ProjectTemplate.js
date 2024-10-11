@@ -23,6 +23,9 @@ export default function ProjectTemplate(props) {
       </div>
       <div className="proj-text-container">
         <div className="proj-info-text">
+        <p className="proj-duration">
+        <b>Project Duration:</b> {props.project.project_duration}
+        </p>
       	<p className="proj-text"> {Parser(props.project.text)} </p>
       	</div>
       	<div className="proj-text-info">
