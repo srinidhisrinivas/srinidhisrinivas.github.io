@@ -22,10 +22,12 @@ class PageLinkOld extends React.Component {
 // Functional component for page link using navigate function
 export function PageLink(props){
    let linkString = "#/"+ props.link
+   let addClass = props.addClass;
+   let className = "page-link" + (addClass ? " " + addClass : "")
    const navigate = useNavigate();
    const handleClick = () => navigate(linkString);
    return(
-       <a href={linkString} className="page-link">
+       <a href={linkString} className={className}>
        <div className="page-link-button" onClick={handleClick}>
         {props.name}
        </div>
@@ -58,6 +60,9 @@ class PageNav extends React.Component {
 
 export class Header extends React.Component {
     render(){
+        // include this in PageNav for debug
+        // {name:"Debug",link:"debug"},
+        // TODO: Think of a better way to toggle debug
     	return(
 	      <div className="site-header">
 	      <div className="header-text-box">
@@ -73,8 +78,7 @@ export class Header extends React.Component {
 	      	    links={[{name:"Home",link:"home"},
 	      	    {name:"Gardener",link:"about"},
 	      	    {name:"Plants",link:"projects"},
-	     	    {name:"History",link:"resume"},
-	     	    {name:"Debug",link:"debug"},
+	     	    {name:"History",link:"resume"}
 	      	    ]}
 	      	/>
 	      </div>
