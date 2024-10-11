@@ -1,21 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.ced15591.css",
-    "main.js": "/static/js/main.e321b96b.js",
+    "main.css": "/static/css/main.a198a651.css",
+    "main.js": "/static/js/main.a9999e8a.js",
     "static/js/453.d97c2a10.chunk.js": "/static/js/453.d97c2a10.chunk.js",
     "static/media/HomeBG.png": "/static/media/HomeBG.b848b1639305190c1ab0.png",
+    "static/media/plant-pot-resized-nobg.png": "/static/media/plant-pot-resized-nobg.cf6a358a5459b058e8da.png",
+    "static/media/TestImage3.jpg": "/static/media/TestImage3.29ca80df4b91b03005f4.jpg",
+    "static/media/bottom-plants.png": "/static/media/bottom-plants.f49dc7a1361b8326766e.png",
     "static/media/Profile-Full.jpg": "/static/media/Profile-Full.cc3cc88d02eec594a06f.jpg",
+    "static/media/TestImage2.jpg": "/static/media/TestImage2.cc3cc88d02eec594a06f.jpg",
     "static/media/HeaderBG.jpg": "/static/media/HeaderBG.09def36ca7356c36772c.jpg",
+    "static/media/TestImage1.jpg": "/static/media/TestImage1.0a0e520407bd8316fcae.jpg",
     "static/media/meme.jpg": "/static/media/meme.0a0e520407bd8316fcae.jpg",
     "static/media/tree.ico": "/static/media/tree.a40bb0ff62347ca90e2d.ico",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.ced15591.css.map": "/static/css/main.ced15591.css.map",
-    "main.e321b96b.js.map": "/static/js/main.e321b96b.js.map",
+    "main.a198a651.css.map": "/static/css/main.a198a651.css.map",
+    "main.a9999e8a.js.map": "/static/js/main.a9999e8a.js.map",
     "453.d97c2a10.chunk.js.map": "/static/js/453.d97c2a10.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ced15591.css",
-    "static/js/main.e321b96b.js"
+    "static/css/main.a198a651.css",
+    "static/js/main.a9999e8a.js"
   ]
 }
