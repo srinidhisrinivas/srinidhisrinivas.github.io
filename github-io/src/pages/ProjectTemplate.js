@@ -10,6 +10,16 @@ import '../App.css';
 // Still haven't figured out how to pass information to this or instantiate it.
 export default function ProjectTemplate(props) { 
     
+    let repoLinks = props.project.repository_url;
+    let repoLinksElements = [];
+    if(repoLinks.length == 0) {
+    	repoLinksElements = [<div> </div>]
+    } else {
+    	repoLinksElements.push(<b>Links to Repositories: </b>);
+    	repoLinks.forEach((link, i) => {
+    		repoLinksElements.push(<a href={link} target="_blank" className="link-url" key={i}>{i+1}</a>);
+ 	});
+    }
     return(
     <div className="App">
       <Header />
@@ -18,8 +28,9 @@ export default function ProjectTemplate(props) {
       <ProjectsBackButton />
       <h1 className="project-header"> {props.project.header} </h1>
       <div className="singleproj-info-container">
-      <div className="proj-images-container">
+      <div className="proj-images-container"> 
           <ImageScroller images={props.project.images} />
+         
       </div>
       <div className="proj-text-container">
         <div className="proj-info-text">
@@ -28,11 +39,11 @@ export default function ProjectTemplate(props) {
         </p>
       	<p className="proj-text"> {Parser(props.project.text)} </p>
       	</div>
-      	<div className="proj-text-info">
-      	<b>Tech Stack: </b> {props.project.tech_text} <br/><br/>
-      	<a href={props.project.repository_url} className="repo-url" target="_blank"> 
-      	Link to Repository
-      	</a>
+      	<div className="proj-competencies-info">
+      	<b>Competencies: </b> {props.project.tech_text} <br/><br/>
+      	</div>
+      	<div className="repo-links-container">
+      	{repoLinksElements}
       	</div>
       </div>
       </div>
