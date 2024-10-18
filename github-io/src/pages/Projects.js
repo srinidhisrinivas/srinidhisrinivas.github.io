@@ -16,7 +16,7 @@ function Projects() {
       <Header />
       <div className="site-content">
       <div className="proj-page-container">
-      <h1 className="page-header"> Plants </h1>
+      <h1 className="page-header"> Projects </h1>
       <p className="page-summary"> Here are some of my projects, erm..., plants that I've grown and taken care of over the years. Click on each for more information! </p>
       
         <ProjectsTable

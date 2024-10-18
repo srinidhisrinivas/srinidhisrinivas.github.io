@@ -14,6 +14,9 @@ function Home() {
         <div className="home-photo-container">
         <img src={profile} className="profile-photo" alt="logo" />
         </div>
+        <div className="resume-link-container">
+        <a href='https://www.youtube.com/watch?v=qT5zLyKfTyE' target='_blank' className='link-url'>Résumé</a>
+        </div>
         <div className="links-box">
         <LinksTable
         	links={
@@ -33,12 +36,12 @@ function Home() {
         </div>
         <div className="home-text-container">
         <p className="home-text">
-          Hello! Welcome to my garden. I am Srinidhi Srinivas. <br/>
+          Hello! I am Srinidhi Srinivas. Welcome to my garden. Here you will find a brief botanical exhibition of my experiences (as a gardener, of course) and the fruits of my labour. <br/>
           <br/>
-          You may be wondering why my photo is spinning. Honestly, I am wondering the same. I hope it doesn't ruin your experience of my garden nonetheless. 
+           Feel free to take a look around, smell the flowers, and read up on the variety of plants that reside here.
           <br/>
           <br/>
-          Feel free to take a look around, smell the flowers, and take in the sights.
+          You may be wondering why my photo is spinning. Honestly, I am wondering the same. I think a plant pest is playing tricks on me. I hope it doesn't ruin your experience of my garden nonetheless. 
           
         </p>
         </div>

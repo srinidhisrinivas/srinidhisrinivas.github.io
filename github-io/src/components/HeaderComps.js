@@ -77,8 +77,7 @@ export class Header extends React.Component {
 	      <PageNav 
 	      	    links={[{name:"Home",link:"home"},
 	      	    {name:"Gardener",link:"about"},
-	      	    {name:"Plants",link:"projects"},
-	     	    {name:"History",link:"resume"}
+	      	    {name:"Plants",link:"projects"}
 	      	    ]}
 	      	/>
 	      </div>

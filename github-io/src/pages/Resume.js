@@ -7,6 +7,7 @@ function Resume() {
     <div className="App">
       <Header />
       <div className="site-content">
+        <h1 className="page-header"> Resume </h1>
         <img src={meme} className="meme" alt="logo" />
         <p>
           Hello! My resume will be visible here.

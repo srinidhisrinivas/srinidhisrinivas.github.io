@@ -29,7 +29,7 @@ export default function ProjectTemplate(props) {
       <h1 className="project-header"> {props.project.header} </h1>
       <div className="singleproj-info-container">
       <div className="proj-images-container"> 
-          <ImageScroller images={props.project.images} />
+          <ImageScroller images={props.project.images} folder="project_images"/>
          
       </div>
       <div className="proj-text-container">

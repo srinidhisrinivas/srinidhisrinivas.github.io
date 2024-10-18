@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import plant from '../graphics/plant-pot-resized-nobg.png'
 import { useNavigate } from 'react-router-dom'
 import { PageLink } from './HeaderComps.js'
-const images = require.context('../graphics/project_images',true);
+const images = require.context('../graphics',true);
 const PROJECT_TABLE_COLUMNS=3;
 
 function ProjectFlower(props) {
@@ -115,9 +115,10 @@ export class ProjectsTable extends React.Component {
 export function ImageScroller(props) {
  	// Props:
  	// images = list of image names to load and scroll through
-    let image="TestImage1.jpg";
     let loadedImages = []
-    props.images.forEach(fileName => loadedImages.push(images("./"+fileName)));
+    let folderName=props.folder;
+    let altClassName= props.altClassName ? props.altClassName : "project-image";
+    props.images.forEach(fileName => loadedImages.push(images("./"+folderName+"/"+fileName)));
     const [imgIndex, setImgIndex] = useState(0);
     function handleClickNext() {
        setImgIndex((imgIndex + 1) % loadedImages.length)
@@ -130,7 +131,7 @@ export function ImageScroller(props) {
     return (
     	<div className="image-scroller-container">
     	  <div className="image-scroller-display">
-    	  <img className="project-image" src={loadedImages[imgIndex]} alt="Project Image"/>
+    	  <img className={altClassName} src={loadedImages[imgIndex]} alt="Project Image"/>
     	  </div>
     	  <div className="image-scroller-button-container">
     	  <button className="image-scroller-button left" onClick={handleClickPrevious}> &lt; </button>
