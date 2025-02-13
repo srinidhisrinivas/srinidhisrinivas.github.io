@@ -18,5 +18,15 @@
         "images": ["MCRL-Schema.png", "MCRL-Scarcity.png", "MCRL-Misalignment.png"],
         "repository_url": ["https://www.github.com/srinidhisrinivas/mcl-scarcity-mouselab","https://www.github.com/srinidhisrinivas/mcl-misalignment-mouselab", "https://www.github.com/srinidhisrinivas/mcl-toolbox"],
         "tech_text": "jsPsych, Heroku, Python (PyTorch, statsmodels), psychology experiment design, data collection and processing, statistical data analysis/hypothesis testing, scientific writing"
+    },
+    {
+        "short_name": "Srinidhi's Garden",
+        "route": "github-io",
+        "project_duration": "Sep. 2024 - Oct. 2024",
+        "text": "This is what you're looking at right now! Nothing motivated me more than the words of my colleague: \"I recommend [having a personal] website since you are a web developer ;)\" Upon hearing this, I was inspired to create an online portfolio while at the same time teaching myself how to use React.js, using which all the components on this website were created from scratch. The theme and design evolved somewhat randomly as I was working on it.<br/><br/>It was a relatively short project, but still a lot of fun! But of course, it will be expanded as time goes on. Maybe one day, when I finally take the time to pen my thoughts to paper (or rather, keyboard my thoughts to text editor), I will also host my blog on here.",
+        "header": "Personal Website - Srinidhi's Garden",
+        "images": ["GIO1.png", "GIO2.png", "GIO3.png", "GIO4.png", "GIO5.png"],
+        "repository_url": ["https://www.github.com/srinidhisrinivas/srinidhisrinivas.github.io"],
+        "tech_text": "React.js, HTML, CSS, Github Pages"
     }
 ]
