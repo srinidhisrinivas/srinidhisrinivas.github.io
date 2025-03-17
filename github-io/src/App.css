@@ -139,7 +139,7 @@
   font-size: calc(5px + 2.5vmin);
   color: #000038;
   margin-top: 18vh;
-  padding-bottom: 10vh;
+  padding-bottom: 5vh;
   background-image: url('graphics/HomeBG.png');
   background-size: 100% 100%;
   background-repeat: repeat;
@@ -176,11 +176,11 @@
 }
 .resume-link-container {
   padding: 10px;
-  font-size: 22px;
+  font-size: calc(5px + 2.5vmin);
 }
 .links-box{
   background: transparent;
-  font-size: 20px;
+  font-size: calc(4px + 2.5vmin);
   text-align: center;
 }
 .link-name{
