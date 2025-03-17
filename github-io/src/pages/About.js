@@ -37,7 +37,7 @@ function About() {
           <br/><br/>
           My hobbies include lots of physical activity. My main passion is basketball, which I've played and watched for about 15 years. I also enjoy long walks/hikes and weight-training for the mobility and strength to keep up with the aforementioned activities. You can sometimes find me in the mosh pit at rock/metal(core) concerts. I am also an avid reader, largely of topics in psychology and philosophy, but also of literature and the occasional random Wikipedia article. At home, I regularly practice mindfulness through meditation and introspection. To fuel my diverse activities, I enjoy taking the time every now and then to cook an elaborate meal. Finally, I love spending time with my amazing, supportive friends and family and making dumb jokes to cope with my existence through shared laughter.
         </p>
-        <span style={{'font-size': '10px'}}>
+        <span class='about-secret-text'>
         (Psst...! Here's a little secret: I actually have no experience in gardening. I once accidentally killed a succulent, the easiest plants to take care of, by over-watering. Plants are cool, though!)
         </span>
         </div>

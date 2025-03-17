@@ -145,6 +145,25 @@
   background-repeat: repeat;
   position: relative;
 }
+
+@media only screen and (max-height: 500px) {
+  .site-content {
+    padding-bottom: 10vh;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  .site-content {
+    padding-bottom: 20vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .site-content {
+    padding-bottom: 10vh;
+  }
+}
+
 .bottom-image-container{
   position: absolute;
   width: 100%;
@@ -256,6 +275,9 @@
   max-width: 30vw;
   align-self: center;
 }
+.about-secret-text {
+  font-size: calc(2.5px + 1.5vmin);
+}
 
 .proj-page-container {
   background: transparent;
@@ -357,18 +379,20 @@
   border: 4px solid #006400;
 }
 .project-image {
-  max-height: 450px;
-  max-width: 500px;
+  max-height: 60vh;
+  max-width: 30vw;
   align-self: center;
 }
 .image-scroller-container {
   background: transparent;
-  height: 500px;
-  width: 500px;
+  height: 70vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
 }
 .image-scroller-display {
   background: transparent;
-  height: 450px;
+  height: 50vw;
   display: flex;
   justify-content: center;
 }
@@ -382,8 +406,8 @@
 .image-scroller-button, .page-counter{
   background: white;
   border: 4px solid #006400;
-  padding: 10px 28px;
-  font-size: 20px;
+  padding: 10px 2vw;
+  font-size: calc(5px + 2vmin);
   font-weight: bold;
   margin-top: 10px;
   -webkit-user-select: none; /* Safari */        
