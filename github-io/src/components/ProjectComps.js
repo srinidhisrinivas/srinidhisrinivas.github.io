@@ -35,24 +35,25 @@ export class ProjectPlant extends React.Component {
         // TODO: Figure out a better way to do this
         if(!this.props.project.short_name){
            return (
-           	<td className="project-cell">
+           	
         	<div className="project-cell-container">
         	<img src={plant} className="plant-image"/>
         	</div>
-        	</td>
+        	
            )
         }
         return (
-        	<td className="project-cell">
+        	
         	<div className="project-cell-container">
         	<ProjectFlower project={this.props.project}/>
         	<img src={plant} className="plant-image"/>
         	</div>
-        	</td>
+        	
         );
     }
 }
 
+// Obsolete component
 export class ProjectTableRow extends React.Component {
     render(){
     	// row of ProjectPlants
@@ -78,23 +79,13 @@ export class ProjectTableRow extends React.Component {
 export class ProjectsTable extends React.Component {
     
     buildProjectTable(projectList){
-    	let projRows = [];
-    	let numCols = PROJECT_TABLE_COLUMNS;
-    	// Divide the single list into 2d list of table rows
-    	let rowsTaken = 0;
-    	let remainingRows = projectList.length;
-    	while(remainingRows > 0){
-    	    let numInRow = remainingRows > numCols ? numCols : remainingRows;
-    	    projRows.push(projectList.slice(rowsTaken, rowsTaken+numInRow));
-    	    rowsTaken += numInRow;
-    	    remainingRows -= numInRow;
-    	}
     	
-    	// Create a row component for each row
-    	let projTableComps = [];
-        projRows.forEach((row,i) => projTableComps.push(
-           <ProjectTableRow projRow={row} key={i}/>
-        ));
+		// Create a div for each project plant and style table using CSS
+		let projTableComps = [];
+		projectList.forEach((cell,i) => projTableComps.push(
+			<ProjectPlant project={cell} key={i} />
+		 ));
+		
     	
     	return projTableComps;
     }
@@ -102,11 +93,9 @@ export class ProjectsTable extends React.Component {
     render(){
     	let projTableComps = this.buildProjectTable(this.props.projectList);
     	return (
-    		<table className="projects-table">
-    		<tbody>
+    		<div className="projects-table">
     		{projTableComps}
-    		</tbody>
-    		</table>
+    		</div>
     	);
     }
 }
