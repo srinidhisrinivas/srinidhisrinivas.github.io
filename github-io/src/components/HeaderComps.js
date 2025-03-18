@@ -42,7 +42,7 @@ class PageNav extends React.Component {
     	let navComponents = [];
     	for(let i=0; i<navList.length; i++){
     	    navComponents.push(
-    	    	<PageLink name={navList[i].name} link={navList[i].link} key={i}/>
+    	    	<PageLink name={navList[i].name} link={navList[i].link} addClass="nav-link" key={i}/>
     	    );
     	}
     	return navComponents;
@@ -65,11 +65,11 @@ export class Header extends React.Component {
         // TODO: Think of a better way to toggle debug
     	return(
 	      <div className="site-header">
-	      <div className="header-text-box">
-	      
-	      <div className="header-photo-box">
+		  <div className="header-photo-box">
 	      <img src={tree} alt="tree-logo" className="header-photo"/>
 	      </div>
+		  <div className="header-info-box">
+	      <div className="header-text-box">
 	      <div className="header-text">
 	      Srinidhi's Garden
 	      </div>
@@ -81,6 +81,7 @@ export class Header extends React.Component {
 	      	    ]}
 	      	/>
 	      </div>
+		  </div>
     	)
     }
 }
