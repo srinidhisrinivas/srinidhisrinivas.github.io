@@ -521,12 +521,38 @@
     width: 93%;
     position: absolute;
     top: 0;
-    height: 100%;
     margin-left: 2vh;
     margin-right: 2vh;
   }
+  .singleproj-container{
+    justify-content: center;
+    width: 100%;
+  }
+  .singleproj-info-container{
+    flex-direction: column;
+    justify-content: center;
+
+  }
+  .proj-images-container{
+    width: 100%;
+    margin-right: 0;
+    height: 100vw;
+  }
+  .project-image {
+    max-width: 65vw;
+    object-fit: contain;
+  }
+  .proj-text-container{
+    font-size: calc(1.3vh + 1.3vw);
+    width: 91%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
   .project-header{
-    top: 0;
+    font-size: calc(2vw + 2vh);
+  }
+  .page-link.projects-back {
+    font-size: calc(3px + 2vw);
   }
   
 }
