@@ -15,7 +15,7 @@ function Home() {
         <img src={profile} className="profile-photo" alt="logo" />
         </div>
         <div className="resume-link-container">
-        <a href='https://drive.google.com/file/d/12gG_PHTGWNyHPiT2J0-i69aWO49NtzPh/view?usp=sharing' target='_blank' className='link-url'>Résumé</a>
+        <a href='https://drive.google.com/file/d/1dlBgmJIQgSqsGq9Ikthw1FQFPq3zbt69/view?usp=sharing' target='_blank' className='link-url'>Résumé</a>
         </div>
         <div className="links-box">
         <LinksTable
